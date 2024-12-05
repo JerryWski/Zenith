@@ -1,0 +1,39 @@
+---
+import ActivitesAreas from '../../Shared/ActivitesAreas.astro';
+
+const infoSectionProps = {
+  header: 'Bezpieczny dostęp i doradztwo',
+  subheader: 'Zadbaj o bezpieczny dostęp i najlepsze rozwiązania dla Twojej firmy.',
+  contentBlocks: [
+    {
+      icon: 'laptop',
+      iconWidth: 50,
+      iconHeight: 24,
+      title: 'Rozwiązania SASE i PIM/PAM',
+      description:
+        'Zapewniamy bezpieczny dostęp do zasobów firmy dzięki nowoczesnym technologiom klasy SASE oraz PIM/PAM.',
+    },
+    {
+      icon: 'user',
+      iconWidth: 50,
+      iconHeight: 24,
+      title: 'Doradztwo w zakresie ochrony',
+      description:
+        'Pomagamy wybrać najefektywniejsze rozwiązania bezpieczeństwa dostosowane do Twoich potrzeb.',
+    },
+    {
+      icon: 'wifi',
+      iconWidth: 50,
+      iconHeight: 24,
+      title: 'Bezpieczne połączenia VPN',
+      description:
+        'Wdrażamy i optymalizujemy rozwiązania VPN, zapewniając bezpieczny zdalny dostęp do zasobów Twojej firmy.',
+    },
+  ],
+  buttonText: 'Sprawdź',
+  buttonHref: '/',
+  customClass: 'mt-[85px]',
+};
+---
+
+<ActivitesAreas {...infoSectionProps} />

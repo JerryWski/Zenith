@@ -1,0 +1,36 @@
+---
+import ActivitesAreas from "../../Shared/ActivitesAreas.astro";
+
+const infoSectionProps = {
+  header: 'Automatyzacja procesów bezpieczeństwa',
+  subheader: 'Automatyzuj, aby zabezpieczyć się szybciej i efektywnie',
+  contentBlocks: [
+    {
+      icon: 'cogs',
+      iconWidth: 50,
+      iconHeight: 24,
+      title: 'Automatyzacja z wykorzystaniem SOAR',
+      description: 'Wykorzystujemy narzędzia SOAR do automatyzacji procesów bezpieczeństwa, zwiększając szybkość reakcji.'
+    },
+    {
+      icon: 'list',
+      iconWidth: 50,
+      iconHeight: 24,
+      title: 'Automatyzacja testów polityk',
+      description: 'Upewniamy się, że Twoje polityki bezpieczeństwa są zawsze aktualne i skuteczne poprzez automatyczne testy.'
+    },
+    {
+      icon: 'systems',
+      iconWidth: 50,
+      iconHeight: 24,
+      title: 'Integracja z systemami',
+      description: 'Bezproblemowo łączymy nowe narzędzia z istniejącą infrastrukturą, zapewniając spójność operacji.'
+    }
+  ],
+  buttonText: 'Sprawdź',
+  buttonHref: '/',
+  customClass: 'mt-[139px]'
+};
+---
+
+<ActivitesAreas {...infoSectionProps} />

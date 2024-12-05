@@ -1,0 +1,33 @@
+---
+import Image from 'astro/components/Image.astro';
+import GlowButton from '../Shared/GlowButton.astro';
+import logo from '../../assets/logo.png';
+import { Icon } from 'astro-icon/components';
+---
+
+<header>
+  <nav class='flex flex-col items-center justify-between'>
+    <a class='block pt-[39px] pb-[31px]' href='/' aria-label='Home'>
+      <Icon class='h-auto w-[234px]' name="logo"/>
+      <!-- <Image
+        class='h-auto w-max'
+        src={logo}
+        alt='spinning-logo'
+        loading={'eager'}
+      /> -->
+    </a>
+    <div class='flex justify-between items-center w-full px-5 gap-[20px]'>
+      <div class="tracking-[-0.48px] font-medium leading-normal font-manrope">
+        <p class='text-white text-[clamp(.7rem,3.5vw,1rem)]'>
+          <span class='text-primary'>[T]</span> +48 691 981 346
+        </p>
+        <p class='text-white text-[clamp(.7rem,3.5vw,1rem)]'>
+          <span class='text-primary'>[E]</span> office@security-zenith.com
+        </p>
+      </div>
+      <GlowButton text='Sprawdź' href='/' />
+    </div>
+  </nav>
+</header>
+
+

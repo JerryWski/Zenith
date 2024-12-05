@@ -1,0 +1,65 @@
+---
+import { Image } from 'astro:assets';
+import phone from '../../assets/phone-sm-cop.webp';
+import hands from '../../assets/hands-sm-cop.webp';
+import people from '../../assets/people-sm-cop.webp'
+import NormalButton from '../Shared/NormalButton.astro';
+---
+
+<section class='bg-bg-silver font-manrope'>
+  <div class='pt-[96px] flex flex-col gap-10 items-center'>
+    <p class='font-trakis uppercase tracking-[-0.6px] text-xl'>
+      [003 tak pracujemy]
+    </p>
+    <h2 class='text-[clamp(2rem,2vw,3rem)] text-center'>PROCES WSPÓŁPRACY</h2>
+  </div>
+
+  <div class='mt-[119px] flex flex-col items-start gap-[30px] px-[20px]'>
+    <h2 class='text-[clamp(2rem,2vw,3rem)] leading-[38.4px] text-pretty'>
+      Skontaktuj się z nami
+    </h2>
+    <p class='text-textgrey text-[18px]'>
+      Nawiąż z nami kontakt w najwygodniejszy dla Ciebie sposób—mailowo,
+      telefonicznie, przez Teams lub Signal. Jesteśmy dostępni, aby odpowiedzieć
+      na Twoje pytania i rozpocząć rozmowę o potrzebach Twojej firmy w zakresie
+      cyberbezpieczeństwa.
+    </p>
+  </div>
+  <div class='mt-[60px] max-w-full h-[350px] object-cover'>
+    <Image class='object-cover h-full' src={phone} alt='close-up-phone' />
+  </div>
+
+  <div class='mt-[119px] flex flex-col items-start gap-[30px] px-[20px]'>
+    <h2 class='text-[clamp(2rem,2vw,3rem)] leading-[38.4px] text-pretty'>
+      Ustalenie ram projektu
+    </h2>
+    <p class='text-textgrey text-[18px]'>
+      Nasz przedstawiciel skontaktuje się z Tobą, aby wspólnie ustalić ramy
+      projektu. Zrozumiemy Twoje wymagania i oczekiwania, aby dostosować nasze
+      usługi do specyfiki Twojej instytucji.
+    </p>
+  </div>
+  <div class='mt-[60px] max-w-full h-[350px] object-cover'>
+    <Image class='object-cover h-full' src={hands} alt='close-up-phone' />
+  </div>
+
+  <div class='mt-[119px] flex flex-col items-start gap-[30px] px-[20px]'>
+    <h2 class='text-[clamp(2rem,2vw,3rem)] leading-[38.4px]'>
+      Dobór zespołu ekspertów
+    </h2>
+    <p class='text-textgrey text-[18px]'>
+      Dobierzemy grono ekspertów, którzy pomogą Ci rozwiązać problemy związane z
+      bezpieczeństwem w Twojej firmie. Niezależnie od tego, czy potrzebujesz
+      dedykowanego inżyniera na pełen etat, wsparcia na kilka dni w tygodniu czy
+      nagłej pomocy w sytuacji kryzysowej—jesteśmy tu, by razem z wami wejść na
+      szczyt cyberbezpieczeństwa.
+    </p>
+    <div>
+        <NormalButton text='Kontakt' href='/'/>
+    </div>
+  </div>
+  <div class='mt-[60px] max-w-full h-[350px] object-cover'>
+    <Image class='object-cover h-full' src={people} alt='close-up-phone' />
+  </div>
+
+</section>

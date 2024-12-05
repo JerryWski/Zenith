@@ -1,0 +1,36 @@
+---
+import ActivitesAreas from "../../Shared/ActivitesAreas.astro";
+
+const infoSectionProps = {
+  header: 'Wdrożenia i wsparcie infrastruktury bezpieczeństwa',
+  subheader: 'Zbuduj solidną podstawę dla bezpieczeństwa Twojej firmy',
+  contentBlocks: [
+    {
+      icon: 'walls',
+      iconWidth: 50,
+      iconHeight: 24,
+      title: 'Wdrożenia SIEM, firewalli i innych dedykowanych rozwiązań',
+      description: 'Implementujemy zaawansowane systemy ochrony przed zagrożeniami, takie jak firewalle i rozwiązania klasy SIEM.'
+    },
+    {
+      icon: 'msg',
+      iconWidth: 50,
+      iconHeight: 24,
+      title: 'Wsparcie powdrożeniowe',
+      description: 'Pomagamy w zarządzaniu i aktualizacji polityk bezpieczeństwa po wdrożeniu, zapewniając ciągłą ochronę.'
+    },
+    {
+      icon: 'diagram',
+      iconWidth: 45,
+      iconHeight: 24,
+      title: 'Projektowanie bezpiecznej infrastruktury',
+      description: 'Tworzymy skalowalne i odporne środowiska IT dostosowane do indywidualnych potrzeb.'
+    }
+  ],
+  buttonText: 'Sprawdź',
+  buttonHref: '/',
+  customClass: 'mt-[325px]'
+};
+---
+
+<ActivitesAreas {...infoSectionProps} />

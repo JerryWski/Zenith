@@ -1,0 +1,42 @@
+---
+import { Icon } from 'astro-icon/components';
+import { Image } from 'astro:assets';
+import image3 from '../../assets/image3.webp'
+---
+
+<section class="relative overflow-hidden">
+  <Icon class='absolute w-full -z-[2]' name='vector' height={400}/>
+  <div class='flex flex-col justify-center items-start pl-[20px]'>
+    <Icon name='frame2' width={62} height={62} class='mt-[60px]' />
+    <div class='flex flex-col items-start justify-center gap-[10px]'>
+      <p class='text-textgrey hidden'>
+        All rights reserved COPYRIGHTS SECURITY ZENITH
+      </p>
+      <p
+        class='text-primary mt-[25px] font-bold leading-[28px] uppercase text-[.8rem]'
+      >
+        FAST BUSINESS CONTACT
+      </p>
+      <p class='text-white text-[1rem] font-medium tracking-[-.48px]'>
+        +48 691 981 346
+      </p>
+      <p class='text-white text-[1rem] font-medium tracking-[-.48px] uppercase'>
+        office@security-zenith.com
+      </p>
+    </div>
+    <div class='flex gap-5 mt-[33px] mb-8'>
+      <a aria-label="social-icon" href="/"><Icon name='link' /></a>
+      <a aria-label="social-icon" href="/"><Icon name='yu' /></a>
+      <a aria-label="social-icon" href="/"><Icon name='x' /></a>
+      <a aria-label="social-icon" href="/"><Icon name='face' /></a>
+      <a aria-label="social-icon" href="/"><Icon name='insta' /></a>
+    </div>
+  </div>
+  <div class="overflow-hidden">
+    <Icon name='zenith-logo' class='w-[150%] h-auto'/>
+  </div>
+  <p class='lg:hidden text-[#68767C] leading-7 uppercase font-bold text-[.625rem] pl-8 pb-[20px] pt-[23px]'>
+    All rights reserved COPYRIGHTS SECURITY ZENITH
+  </p>
+    <Image class='bottom-0 absolute -z-[1]' src={image3} alt='snowy-mountain'/>
+</section>

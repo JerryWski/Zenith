@@ -1,0 +1,113 @@
+---
+import { Image } from 'astro:assets';
+import radial from '../../assets/radial.png';
+---
+
+<section class="pb-[40px]">
+  <div class='pt-[113px] flex flex-col gap-10 items-start px-5'>
+    <p class='font-trakis text-primary tracking-[-0.6px] text-xl'>
+      [005 MÓWIĄ O NAS]
+    </p>
+    <h2 class='text-[clamp(2rem,2vw,3rem)] uppercase text-white'>
+      OPINIE NASZYCH KLIENTÓW
+    </h2>
+  </div>
+
+  <div class='text-white flex gap-[14px] overflow-x-auto mt-[40px] pb-4 snap-x'>
+    <div
+      class='relative flex-shrink-0 snap-start w-full max-w-[465px] border rounded-lg border-grey pb-[30px]'
+    >
+      <div class='flex justify-between items-center mx-6 mt-6'>
+        <h3
+          class='text-primary font-trakis uppercase leading-[41px] text-[clamp(1.8rem,2vw,2.3rem)]'
+        >
+          Miles Dyson
+        </h3>
+        <p class='text-silver text-[clamp(.6rem,2vw,.7rem)]'>24.09.2024</p>
+      </div>
+      <span class='pl-[25px] leading-normal text-[12px]'>Skynet</span>
+      <div class='px-[24px]'>
+        <span
+          class='bg-primary mt-[83px] h-[1px] w-full flex justify-center items-center'
+        ></span>
+        <p
+          class='text-silver mt-[27px] text-[clamp(.6rem,2vw,.7rem)] leading-normal'
+        >
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eaque
+          quisquam dolor cum tenetur esse similique, possimus quasi dolorem
+          nihil suscipit eum voluptatum illum facere ratione tempore modi
+          repellat nemo saepe.
+        </p>
+      </div>
+      <Image
+        class='absolute bottom-0 w-full'
+        src={radial}
+        alt='radial-effect'
+      />
+    </div>
+
+    <div
+      class='relative flex-shrink-0 snap-start w-full max-w-[465px] border rounded-lg border-grey pb-[30px]'
+    >
+      <div class='flex justify-between items-center mx-6 mt-6'>
+        <h3
+          class='text-primary font-trakis uppercase leading-[41px] text-[clamp(1.8rem,2vw,2.3rem)]'
+        >
+          TOM ARAYA
+        </h3>
+        <p class='text-silver text-[clamp(.6rem,2vw,.7rem)]'>06.06.2023</p>
+      </div>
+      <span class='pl-[25px] leading-normal text-[12px]'>Slynet</span>
+      <div class='px-[24px]'>
+        <span
+          class='bg-primary mt-[83px] h-[1px] w-full flex justify-center items-center'
+        ></span>
+        <p
+          class='text-silver mt-[27px] text-[clamp(.6rem,2vw,.7rem)] leading-normal'
+        >
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eaque
+          quisquam dolor cum tenetur esse similique, possimus quasi dolorem
+          nihil suscipit eum voluptatum illum facere ratione tempore modi
+          repellat nemo saepe.
+        </p>
+      </div>
+      <Image
+        class='absolute bottom-0 w-full'
+        src={radial}
+        alt='radial-effect'
+      />
+    </div>
+
+    <div
+      class='relative flex-shrink-0 snap-start w-full max-w-[465px] border rounded-lg border-grey pb-[30px]'
+    >
+      <div class='flex justify-between items-center mx-6 mt-6'>
+        <h3
+          class='text-primary font-trakis uppercase leading-[41px] text-[clamp(1.8rem,2vw,2.3rem)]'
+        >
+          Kyle Reese
+        </h3>
+        <p class='text-silver text-[clamp(.6rem,2vw,.7rem)]'>18.01.2024</p>
+      </div>
+      <span class='pl-[25px] leading-normal text-[12px]'>Cyberdyne Systems</span>
+      <div class='px-[24px]'>
+        <span
+          class='bg-primary mt-[83px] h-[1px] w-full flex justify-center items-center'
+        ></span>
+        <p
+          class='text-silver mt-[27px] text-[clamp(.6rem,2vw,.7rem)] leading-normal'
+        >
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eaque
+          quisquam dolor cum tenetur esse similique, possimus quasi dolorem
+          nihil suscipit eum voluptatum illum facere ratione tempore modi
+          repellat nemo saepe.
+        </p>
+      </div>
+      <Image
+        class='absolute bottom-0 w-full'
+        src={radial}
+        alt='radial-effect'
+      />
+    </div>
+  </div>
+</section>

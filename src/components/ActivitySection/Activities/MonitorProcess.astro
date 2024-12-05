@@ -1,0 +1,39 @@
+---
+import ActivitesAreas from '../../Shared/ActivitesAreas.astro';
+
+const infoSectionProps = {
+  header: 'Monitorowanie i reagowanie na incydenty',
+  subheader: 'Bądź o krok przed zagrożeniami dzięki proaktywnemu monitorowaniu',
+  contentBlocks: [
+    {
+      icon: 'shield',
+      iconWidth: 50,
+      iconHeight: 24,
+      title: 'Bezpieczna infrastruktura',
+      description:
+        'Budujemy systemy ciągłego nadzoru nad infrastrukturą IT, abyś mógł szybko wykrywać i reagować na potencjalne zagrożenia.',
+    },
+    {
+      icon: 'fileshield',
+      iconWidth: 50,
+      iconHeight: 24,
+      title: 'Dedykowane scenariusze monitorowania',
+      description:
+        'Tworzymy strategie wykrywania zagrożeń dostosowane do specyfiki Twojej firmy.',
+    },
+    {
+      icon: 'folders',
+      iconWidth: 50,
+      iconHeight: 24,
+      title: 'Audyty technologiczne',
+      description:
+        'Analizujemy Twoją infrastrukturę pod kątem podatności i ryzyk, wskazując obszary wymagające poprawy.',
+    },
+  ],
+  buttonText: 'Sprawdź',
+  buttonHref: '/',
+  customClass: 'mt-[85px]',
+};
+---
+
+<ActivitesAreas {...infoSectionProps} />

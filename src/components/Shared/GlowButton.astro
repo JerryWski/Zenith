@@ -1,0 +1,26 @@
+---
+import { Icon } from 'astro-icon/components';
+
+interface Props {
+  text: string;
+  href:string
+}
+
+const { text = 'Sprawdź',href } = Astro.props;
+---
+
+<a
+  class='transition-all duration-300 ease-in-out inline-flex w-auto
+  btn-before
+  btn-before-hover
+  btn-after
+  btn-after-hover
+  hover:text-primary border-gray-400 pl-[24px] py-[9px] pr-[10px] rounded-[29px] relative text-white bg-bg-btn'
+  href={href}
+>
+  <div class='flex items-center gap-2'>
+    <span class='leading-5 text-[14px] tracking-[-0.14px]'>{text}</span>
+    <Icon class='w-[20px] h-auto' name='arrow-r2' />
+  </div>
+</a>
+

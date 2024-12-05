@@ -1,0 +1,93 @@
+---
+import Image from 'astro/components/Image.astro';
+import partner from '../../assets/manage.png';
+import partner2 from '../../assets/ekran.png';
+import partner3 from '../../assets/fortinet.png';
+import partner4 from '../../assets/fudo.png';
+import partner5 from '../../assets/palo.png';
+import partner6 from '../../assets/splunk.png';
+---
+
+<div
+  class='wrapper mx-auto w-[90%] max-w-[1536px] inline-flex justify-center items-center relative h-[50px] mt-[49px] overflow-hidden'
+>
+  <p
+    class='item item1 text-white font-trakis uppercase text-2xl w-fit h-[35px] bg-transparent rounded-[6px] absolute left-[max(calc(200px*8),100%)] animate-[scrollLeft_30s_linear_infinite]'
+  >
+    Nasi Partnerzy:
+  </p>
+  <Image
+    class='item item4 w-fit h-[35px] bg-transparent rounded-[6px] absolute left-[max(calc(200px*8),100%)] animate-[scrollLeft_30s_linear_infinite]'
+    src={partner3}
+    alt={'brand-name'}
+  />
+  <Image
+    class='item item5 w-fit h-[35px] bg-transparent rounded-[6px] absolute left-[max(calc(200px*8),100%)] animate-[scrollLeft_30s_linear_infinite]'
+    src={partner4}
+    alt={'brand-name'}
+  />
+  <Image
+    class='item item3 w-fit h-[35px] bg-transparent rounded-[6px] absolute left-[max(calc(200px*8),100%)] animate-[scrollLeft_30s_linear_infinite]'
+    src={partner2}
+    alt={'brand-name'}
+  />
+  <Image
+    class='item item2 w-fit h-[35px] bg-transparent rounded-[6px] absolute left-[max(calc(200px*8),100%)] animate-[scrollLeft_30s_linear_infinite]'
+    src={partner}
+    alt={'brand-name'}
+  />
+  <Image
+    class='item item6 w-fit h-[35px] bg-transparent rounded-[6px] absolute left-[max(calc(200px*8),100%)] animate-[scrollLeft_30s_linear_infinite]'
+    src={partner5}
+    alt={'brand-name'}
+  />
+  <Image
+    class='item item7 w-fit h-[35px] bg-transparent rounded-[6px] absolute left-[max(calc(200px*8),100%)] animate-[scrollLeft_30s_linear_infinite]'
+    src={partner6}
+    alt={'brand-name'}
+  />
+</div>
+
+<style>
+  .wrapper {
+    mask-image: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 0),
+      rgba(0, 0, 0, 1) 20%,
+      rgba(0, 0, 0, 1) 80%,
+      rgba(0, 0, 0, 0)
+    );
+  }
+
+  @keyframes scrollLeft {
+    to {
+      left: -200px;
+    }
+  }
+  .item1 {
+    animation-delay: calc(44s / 8 * (8 - 1) * -1);
+  }
+
+  .item2 {
+    animation-delay: calc(40s / 8 * (8 - 2) * -1);
+  }
+
+  .item3 {
+    animation-delay: calc(40s / 8 * (8 - 3) * -1);
+  }
+
+  .item4 {
+    animation-delay: calc(42s / 8 * (8 - 4) * -1);
+  }
+
+  .item5 {
+    animation-delay: calc(40s / 8 * (8 - 5) * -1);
+  }
+
+  .item6 {
+    animation-delay: calc(16s / 8 * (8 - 6) * -1);
+  }
+  .item7 {
+    animation-delay: calc(49s / 8 * (8 - 6) * -1);
+  }
+</style>
