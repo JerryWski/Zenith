@@ -3,38 +3,45 @@ import { Icon } from 'astro-icon/components';
 import GlowButton from '../Shared/GlowButton.astro';
 ---
 
-<section class='relative mt-[100px] px-[17px]'>
+<section class='relative mt-[100px] lg:mt-0 px-[17px]'>
   <Icon
-    class='absolute top-[calc(900px-10%)] left-[calc(50%)] transform -translate-x-1/2 -translate-y-1/2'
+    class='absolute lg:top-[calc(850px-10%)] 2xl:w-[250px] 2xl:h-[250px] top-[calc(900px-10%)] left-[calc(50%)] transform -translate-x-1/2 -translate-y-1/2'
     width={200}
     height={200}
     name='frame'
   />
-  <div class='wrapper bg-no-repeat absolute inset-0 -z-10 bottom-[0px] right-0 left-0 top-[341px] h-[800px]'></div>
+  <div
+    class='wrapper bg-no-repeat absolute inset-0 -z-10 bottom-[0px] right-0 left-0 top-[341px] h-[800px]'
+  >
+  </div>
 
-  <div class="lg:flex items-start justify-between lg:pt-[450px]">
-    <div>
+  <div class='lg:flex items-start justify-between lg:pt-[450px]'>
+    <div class='lg:max-w-[30%] lg:ml-[120px]'>
       <h2
         class='text-white text-[clamp(1.6rem,3vw,48px)] text-wrap uppercase text-left'
       >
-        Wspieramy rozwój cyberbezpieczeństwa w organizacjach <b>od ponad 15 lat.</b>
+        Wspieramy rozwój cyberbezpieczeństwa w organizacjach <b
+          >od ponad 15 lat.</b
+        >
       </h2>
-      <p class='text-white py-10 text-wrap'>
+      <p class='text-white py-10 text-wrap lg:max-w-[50%] text-[18px]'>
         W dynamicznie zmieniającym się świecie cyfrowym <b>
           ochrona danych i infrastruktury
         </b> to podstawa bezpieczeństwa każdej firmy.
       </p>
       <GlowButton text='Sprawdź' href='/' />
     </div>
-    <div class='flex justify-center mt-[655px] lg:mt-0'>
-      <div
-        class='flex flex-col gap-10 items-center font-trakis uppercase '
-      >
+    <div
+      class='flex justify-center mt-[655px] lg:mt-0 lg:mr-[60px] xl:mr-[140px]'
+    >
+      <div class='flex flex-col gap-10 items-center font-trakis uppercase'>
         <div
           class='text-primary self-stretch border border-silver backdrop-blur-sm bg-silver/20 flex justify-center items-center gap-[10px] flex-col py-[42px] h-[172px] rounded-[20px]'
         >
           <h3 class='text-5xl leading-[52px]'>1000tb+</h3>
-          <p class='text-xl leading-7 text-center text-white'>Przeanalizowanych logów</p>
+          <p class='text-xl leading-7 text-center text-white'>
+            Przeanalizowanych logów
+          </p>
         </div>
         <div
           class='text-primary self-stretch border border-silver min-w-[320px] max-w-[345px] backdrop-blur-sm bg-silver/20 flex justify-center items-center gap-[10px] flex-col py-[42px] h-[172px] rounded-[20px]'
@@ -48,12 +55,13 @@ import GlowButton from '../Shared/GlowButton.astro';
           class='text-primary self-stretch border border-silver backdrop-blur-sm bg-silver/20 flex justify-center items-center gap-[10px] flex-col px-[46px] py-[42px] h-[172px] rounded-[20px]'
         >
           <h3 class='text-5xl leading-[52px]'>Wszyscy</h3>
-          <p class='text-xl leading-7 text-center text-white'>Zadowoleni klienci</p>
+          <p class='text-xl leading-7 text-center text-white'>
+            Zadowoleni klienci
+          </p>
         </div>
       </div>
     </div>
   </div>
-
 </section>
 
 <style>
