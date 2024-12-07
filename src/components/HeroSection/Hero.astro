@@ -2,12 +2,13 @@
 import '../../styles/fonts.css';
 import Image from 'astro/components/Image.astro';
 import hero2 from '../../assets/hero-big3.webp'
+import NormalButton from '../Shared/NormalButton.astro';
 ---
 
 <section
   class='lg:before:block before:hidden before:absolute before:bg-no-repeat before:inset-0 before:bg-[url("/src/icons/vector.svg")] before:bg-[1254px_70px] before:bg-[1172px auto] after:bg-[url("/src/icons/vector.svg")] after:bg-[center_20px] lg:after:bg-left-top relative flex justify-center items-start flex-col after:absolute after:inset-0 after:bg-no-repeat after:bg-[1140px_auto]'
 >
-  <div class='mt-14 lg:mt-[15rem] pl-5 lg:pl-0 z-20 lg:mx-[120px]'>
+  <div class='mt-14 lg:mt-[15rem] pl-5 lg:pl-0 z-20 lg:mx-[120px] lg:mb-[30px]'>
     <p class='text-primary uppercase font-medium font font-trakis text-xl'>
       Security Zenith
     </p>
@@ -27,6 +28,5 @@ import hero2 from '../../assets/hero-big3.webp'
     src={hero2}
     alt={'snowy-mountains'}
   />
-  
 </section>
 
