@@ -1,10 +1,11 @@
 ---
+import { Icon } from 'astro-icon/components';
 import NormalButton from '../Shared/NormalButton.astro';
 ---
 
 <section class='flex justify-center w-full relative lg:mt-[-120px] xl:mt-[-240px] 2xl:mt-[-300px] lg:z-10'>
   <div
-    class='bg-bg-silver w-full md:max-w-[1440px] mx-4 flex flex-col justify-start items-center px-4 pb-[42px]'
+    class='bg-bg-silver w-full md:max-w-full mx-4 lg:mx-[120px] flex flex-col justify-start items-center px-4 pb-[42px] overflow-clip'
   >
     <p class='font-trakis mt-[46px] text-xl uppercase tracking-[-0.6px]'>
       [001 Intro]
@@ -14,27 +15,37 @@ import NormalButton from '../Shared/NormalButton.astro';
     >
       Zenith Rozwiązań Cyberbezpieczeństwa
     </h2>
-    <div>
-      <p class='mb-10 font-manrope text-left text-[18px]'>
-        Security Zenith to <b>grupa pasjonatów</b> rozwiązań Cybersecurity. Dbam o
-        to, żeby organizacje były <b>bezpieczne i przygotowane</b> na incydenty.
-      </p>
-      <p class='mb-10 font-manrope text-left text-[18px]'>
-        W dynamicznie zmieniającym się świecie cyfrowym <b>
-          ochrona danych i infrastruktury
-        </b> to podstawa bezpieczeństwa każdej firmy.
-      </p>
-      <p class='mb-10 font-manrope text-left text-[18px]'>
-        Nasza firma specjalizuje się w dostarczaniu <b>
-          najnowocześniejszych rozwiązań cyberbezpieczeństwa
-        </b>, które gwarantują spokój i stabilność Twojego biznesu.
-      </p>
-      <p class='mb-10 font-manrope text-left text-[18px]'>
-        Tworzymy <b>bezpieczne środowiska IT</b>, wykorzystując zaawansowaną
-        automatyzację procesów i technologię dopasowaną do Twoich potrzeb.
-      </p>
-      <div class='mr-auto'>
-        <NormalButton text='Kontakt' href='/' />
+    <div class="lg:flex relative w-full ">
+      <div class="lg:max-w-[50%] lg:ml-[60px] 2xl:ml-[120px]">
+        <p class='mb-10 md:mb-7 lg:mb-5 font-manrope text-left text-[18px]'>
+          Security Zenith to <b>grupa pasjonatów</b> rozwiązań Cybersecurity. Dbam o
+          to, żeby organizacje były <b>bezpieczne i przygotowane</b> na incydenty.
+        </p>
+        <p class='mb-10 font-manrope text-left text-[18px]'>
+          W dynamicznie zmieniającym się świecie cyfrowym <b>
+            ochrona danych i infrastruktury
+          </b> to podstawa bezpieczeństwa każdej firmy.
+        </p>
+        <p class='mb-10 font-manrope text-left text-[18px]'>
+          Nasza firma specjalizuje się w dostarczaniu <b>
+            najnowocześniejszych rozwiązań cyberbezpieczeństwa
+          </b>, które gwarantują spokój i stabilność Twojego biznesu.
+        </p>
+        <p class='mb-10 font-manrope text-left text-[18px]'>
+          Tworzymy <b>bezpieczne środowiska IT</b>, wykorzystując zaawansowaną
+          automatyzację procesów i technologię dopasowaną do Twoich potrzeb.
+        </p>
+        <div class='mr-auto'>
+          <NormalButton text='Kontakt' href='/' />
+        </div>
+      </div>
+      <div class="lg:absolute lg:bottom-[-50%] xl:bottom-[-345px] 2xl:bottom-[-460px] lg:right-0 xl:right-[-40px] lg:w-[50%] lg:overflow-hidden">
+        <Icon 
+          class='hidden lg:block lg:object-cover lg:w-full lg:h-[50%]' 
+          name="logo-black" 
+          width={733} 
+          height={733}
+        />
       </div>
     </div>
   </div>
