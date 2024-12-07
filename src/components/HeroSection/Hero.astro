@@ -1,12 +1,11 @@
 ---
 import '../../styles/fonts.css';
 import Image from 'astro/components/Image.astro';
-import small from '../../assets/big-m.png';
 import hero from '../../assets/hero-big2.webp'
 ---
 
 <section
-  class='relative flex justify-center items-start flex-col after:absolute after:inset-0 after:bg-no-repeat after:bg-[1140px_auto]'
+  class='after:bg-[url("/src/icons/vector.svg")] after:bg-[center_20px] lg:after:bg-left-top relative flex justify-center items-start flex-col after:absolute after:inset-0 after:bg-no-repeat after:bg-[1140px_auto]'
 >
   <div class='mt-14 lg:mt-[15rem] pl-5 lg:pl-0 z-20 lg:mx-[120px]'>
     <p class='text-primary uppercase font-medium font font-trakis text-xl'>
@@ -31,15 +30,4 @@ import hero from '../../assets/hero-big2.webp'
   
 </section>
 
-<style>
-    .test {
-        
-        margin-inline: 35px;
-        height: 300px;
-        
-    }
-  section:after {
-    background-image: url('../../icons/vector.svg');
-    background-position: center 20px;
-  }
-</style>
+
