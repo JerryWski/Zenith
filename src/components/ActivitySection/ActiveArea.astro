@@ -40,10 +40,16 @@ import chart5 from '../../assets/chart4-1.png'
       />
     </div>
   </div>
-  <SecureProcess />
-  <Image class='mt-[80px]' src={effects} alt='chart-diagram'/>
-  <MonitorProcess />
-  <Image class='mt-[85px]' src={chart3} alt='chart-diagram'/>
-  <ConsultingProcess />
-  <Image class='mt-[53px] mb-[180px]' src={chart5} alt='chart-diagram'/>
+  <div class="lg:flex lg:items-center lg:justify-center lg:gap-24 2xl:gap-[100px]">
+    <SecureProcess />
+    <Image class='mt-[80px] lg:max-w-[50%] lg:order-[-1]' src={effects} alt='chart-diagram'/>
+  </div>
+  <div>
+    <MonitorProcess />
+    <Image class='mt-[95px]' src={chart3} alt='chart-diagram'/>
+  </div>
+  <div>
+    <ConsultingProcess />
+    <Image class='mt-[53px] mb-[180px]' src={chart5} alt='chart-diagram'/>
+  </div>
 </section>
