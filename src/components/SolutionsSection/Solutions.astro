@@ -3,8 +3,8 @@ import GlowButton from '../Shared/GlowButton.astro';
 import SolutionsCards from './SolutionsCards.astro';
 ---
 
-<section class='font-manrope relative'>
-  <div class='pt-[113px] flex flex-col gap-10 items-start px-5 lg:px-[120px]'>
+<section class='font-manrope relative after:bg-no-repeat after:bg-[position:-887.3px_-610px] after:blur-md lg:after:bg-[position:-727px_-720px] after:bg-[length:1530px] lg:after:bg-[length:1680px]'>
+  <div class='pt-[113px] lg:pt-[200px] flex flex-col gap-10 items-start px-5 lg:px-[120px]'>
     <p class='font-trakis text-primary tracking-[-0.6px] text-xl'>
       [004 INDYWIDUALNE ROZWIĄZANIA]
     </p>
@@ -36,8 +36,6 @@ import SolutionsCards from './SolutionsCards.astro';
     top: 0;
     z-index: -1;
     left: 0px;
-    background-position: -887.3px -610px;
-    background-repeat: no-repeat;
-    background-size: 1530px;
+    filter: blur(12px);
   }
 </style>
