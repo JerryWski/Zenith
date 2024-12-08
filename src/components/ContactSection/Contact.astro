@@ -4,10 +4,10 @@ import { Image } from 'astro:assets';
 import image3 from '../../assets/image3.webp'
 ---
 
-<section class="relative overflow-hidden lg:flex lg:flex-col lg:justify-center lg:h-[800px] ">
+<section class="relative overflow-hidden lg:flex lg:flex-col lg:justify-center lg:h-[600px] ">
   
   <Icon class='absolute w-full -z-[2]' name='vector' height={400}/>
-  <div class='flex flex-col lg:flex-row justify-center lg:justify-evenly items-start lg:items-center pl-[20px]'>
+  <div class='flex flex-col lg:flex-row justify-center lg:justify-evenly items-start lg:items-center pl-[20px] lg:relative lg:z-10'>
     <div class="lg:flex lg:justify-center lg:items-center lg:gap-6">
       <Icon name='frame2' width={62} height={62} class='mt-[60px] lg:mt-0' />
       <p class='text-textgrey hidden lg:inline-block lg:text-[10px]'>
@@ -36,10 +36,10 @@ import image3 from '../../assets/image3.webp'
     </div>
   </div>
   <div class="overflow-x-clip lg:overflow-visible">
-    <Icon name='zenith-logo' class='w-[150%] lg:w-full h-auto'/>
+    <Icon name='zenith-logo' class='w-[150%] lg:w-full h-auto lg:absolute lg:bottom-0'/>
   </div>
   <p class='lg:hidden text-[#68767C] leading-7 uppercase font-bold text-[.625rem] pl-8 pb-[20px] pt-[23px]'>
     All rights reserved COPYRIGHTS SECURITY ZENITH
   </p>
-    <Image class='bottom-0 absolute -z-[1]' src={image3} alt='snowy-mountain'/>
+    <Image class='bottom-0 absolute -z-[1] lg:bottom-[-250px] lg:object-contain lg:h-[702px]' src={image3} alt='snowy-mountain'/>
 </section>
