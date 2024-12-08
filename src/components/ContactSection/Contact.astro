@@ -4,16 +4,19 @@ import { Image } from 'astro:assets';
 import image3 from '../../assets/image3.webp'
 ---
 
-<section class="relative overflow-hidden">
+<section class="relative overflow-hidden lg:flex lg:flex-col lg:justify-center lg:h-[800px] ">
+  
   <Icon class='absolute w-full -z-[2]' name='vector' height={400}/>
-  <div class='flex flex-col justify-center items-start pl-[20px]'>
-    <Icon name='frame2' width={62} height={62} class='mt-[60px]' />
-    <div class='flex flex-col items-start justify-center gap-[10px]'>
-      <p class='text-textgrey hidden'>
+  <div class='flex flex-col lg:flex-row justify-center lg:justify-evenly items-start lg:items-center pl-[20px]'>
+    <div class="lg:flex lg:justify-center lg:items-center lg:gap-6">
+      <Icon name='frame2' width={62} height={62} class='mt-[60px] lg:mt-0' />
+      <p class='text-textgrey hidden lg:inline-block lg:text-[10px]'>
         All rights reserved COPYRIGHTS SECURITY ZENITH
       </p>
+    </div>
+    <div class='flex flex-col lg:flex-row items-start lg:items-center justify-center gap-[10px] lg:gap-5 xl:gap-8'>
       <p
-        class='text-primary mt-[25px] font-bold leading-[28px] uppercase text-[.8rem]'
+        class='text-primary mt-[25px] lg:mt-0 font-bold leading-[28px] uppercase text-[.8rem] lg:text-[10px]'
       >
         FAST BUSINESS CONTACT
       </p>
@@ -32,8 +35,8 @@ import image3 from '../../assets/image3.webp'
       <a aria-label="social-icon" href="/"><Icon name='insta' /></a>
     </div>
   </div>
-  <div class="overflow-hidden">
-    <Icon name='zenith-logo' class='w-[150%] h-auto'/>
+  <div class="overflow-x-clip lg:overflow-visible">
+    <Icon name='zenith-logo' class='w-[150%] lg:w-full h-auto'/>
   </div>
   <p class='lg:hidden text-[#68767C] leading-7 uppercase font-bold text-[.625rem] pl-8 pb-[20px] pt-[23px]'>
     All rights reserved COPYRIGHTS SECURITY ZENITH
