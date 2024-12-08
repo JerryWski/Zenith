@@ -19,29 +19,31 @@ import chart5 from '../../assets/chart4-1.png'
       [002 OBSZARY DZIAŁANIA]
     </p>
     <h2
-      class='uppercase text-white text-[clamp(1.6rem,7vw,3rem)] leading-[52px]'
+      class='uppercase text-white text-[clamp(1.6rem,7vw,3rem)] leading-[52px] lg:max-w-[700px]'
     >
       Działamy w obszarach cyberbezpieczeństwa
     </h2>
   </div>
 
-  <AutoProcess />
-  <div class='relative'>
-    <Image
-      class='mt-[61px] object-contain'
-      src={charts2}
-      alt='chart-diagram'
-    />
-    <Image
-      class='img absolute bottom-[-183px] left-[75px]  max-w-[100%] -z-[100]'
-      src={pyramid}
-      alt='pyramid-icon'
-    />
+  <div class="lg:flex lg:items-center lg:justify-center lg:gap-24 2xl:gap-[200px]">
+    <AutoProcess />
+    <div class='relative'>
+      <Image
+        class='mt-[61px] object-contain lg:relative lg:mt-[-50px]'
+        src={charts2}
+        alt='chart-diagram'
+      />
+      <Image
+        class='img absolute bottom-[-183px] md:bottom-[-210px] md:max-w-[70%] md:left-[190px] lg:left-[75px] lg:max-w-[100%] xl:bottom-[-246px] left-[75px] max-w-[100%] -z-[100]'
+        src={pyramid}
+        alt='pyramid-icon'
+      />
+    </div>
   </div>
   <SecureProcess />
   <Image class='mt-[80px]' src={effects} alt='chart-diagram'/>
   <MonitorProcess />
   <Image class='mt-[85px]' src={chart3} alt='chart-diagram'/>
   <ConsultingProcess />
-  <Image class='mt-[53px]' src={chart5} alt='chart-diagram'/>
+  <Image class='mt-[53px] mb-[180px]' src={chart5} alt='chart-diagram'/>
 </section>
