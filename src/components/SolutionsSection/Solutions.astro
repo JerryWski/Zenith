@@ -1,11 +1,9 @@
 ---
-import { Image } from 'astro:assets';
-import radial from '../../assets/radial.png';
 import GlowButton from '../Shared/GlowButton.astro';
+import SolutionsCards from './SolutionsCards.astro';
 ---
 
 <section class='font-manrope relative'>
-  
   <div class='pt-[113px] flex flex-col gap-10 items-start px-5 lg:px-[120px]'>
     <p class='font-trakis text-primary tracking-[-0.6px] text-xl'>
       [004 INDYWIDUALNE ROZWIĄZANIA]
@@ -18,199 +16,9 @@ import GlowButton from '../Shared/GlowButton.astro';
   <div
     class='mt-[85px] mx-5 flex flex-col gap-[25px] items-start lg:items-center justify-center'
   >
-    <div class="lg:flex gap-5 mb-8 lg:w-full justify-evenly">
-      
-      <div
-        class='container group mb-5 p-[25px] w-full max-w-[465px] after:content-[""] after:-z-10 after:absolute after:inset-[-1px] after:rounded-[inherit] after:bg-[conic-gradient(from_-65deg,_#002b10_-31%,_rgb(140,140,140,0.2)_53%,_rgb(2,47,20,0.7))] rounded-[13px] relative bg-black'
-      >
-        <h3 class='font-trakis text-primary text-[40px] uppercase'>
-          Konsultacje eksperckie
-        </h3>
-        <div class='group-hover:top-[-30px] transition-all duration-500 ease-in-out relative top-0 pt-[40px]'>
-          <p class='text-white pb text-[15px]'>
-            Pomagamy rozpocząć budowanie solidnego cyberbezpieczeństwa w Twojej
-            firmie
-          </p>
-          <svg
-            class='mt-[76px]'
-            width='126'
-            height='126'
-            viewBox='0 0 130 130'
-            fill='none'
-            xmlns='http://www.w3.org/2000/svg'
-          >
-            <path
-              id='Vector'
-              d='M128.248 61.2857C128.273 70.5888 126.099 79.7661 121.905 88.0701C116.932 98.0208 109.286 106.39 99.8249 112.241C90.3637 118.093 79.4603 121.194 68.336 121.198C59.0329 121.222 49.8556 119.049 41.5516 114.855L1.375 128.247L14.7672 88.0701C10.5728 79.7661 8.39927 70.5888 8.42353 61.2857C8.42783 50.1614 11.5292 39.258 17.3802 29.7968C23.2313 20.3355 31.6009 12.6901 41.5516 7.71692C49.8556 3.52256 59.0329 1.34899 68.336 1.37325H71.8603C86.5518 2.18377 100.428 8.38485 110.833 18.7892C121.237 29.1935 127.438 43.0699 128.248 57.7615V61.2857Z'
-              stroke='url(#paint0_linear_652_2061)'
-              stroke-opacity='0.38'
-              stroke-width='1.69165'
-              stroke-linecap='round'
-              stroke-linejoin='round'></path>
-            <defs>
-              <linearGradient
-                id='paint0_linear_652_2061'
-                x1='29.7101'
-                y1='13.2146'
-                x2='110.909'
-                y2='128.247'
-                gradientUnits='userSpaceOnUse'
-              >
-                <stop stop-color='#22D96D'></stop>
-                <stop offset='1' stop-color='#514747'></stop>
-              </linearGradient>
-            </defs>
-          </svg>
-        </div>
-      </div>
+    <div class='lg:flex gap-5 mb-8 lg:w-full justify-evenly'>
 
-      <div
-        class='container mb-5 group p-[25px] w-full max-w-[465px] after:content-[""] after:-z-10 after:absolute after:inset-[-1px] after:rounded-[inherit] after:bg-[conic-gradient(from_-65deg,_#002b10_-31%,_rgb(140,140,140,0.2)_53%,_rgb(2,47,20,0.7))] rounded-[13px] relative bg-black'
-      >
-        <h3 class='font-trakis text-primary text-[40px] uppercase'>
-          Dedykowany inżynier
-        </h3>
-        <div class="group-hover:top-[-30px] transition-all duration-500 ease-in-out relative top-0 pt-[40px]">
-          <p class='pt-[40px] text-white pb text-[15px]'>
-            Przypisany do projektu na pełen etat, kilka dni w tygodniu lub według
-            Twoich wymagań.
-          </p>
-          <svg
-            class='mt-[76px]'
-            width='126'
-            height='126'
-            viewBox='0 0 115 130'
-            fill='none'
-            xmlns='http://www.w3.org/2000/svg'
-          >
-            <g id='Group 1010108778'>
-              <path
-                id='Vector'
-                d='M114.152 128.241V114.144C114.152 106.667 111.181 99.4955 105.894 94.2081C100.606 88.9206 93.435 85.9502 85.9574 85.9502H29.5691C22.0916 85.9502 14.9203 88.9206 9.63287 94.2081C4.34545 99.4955 1.375 106.667 1.375 114.144V128.241'
-                stroke='url(#paint0_linear_652_2483)'
-                stroke-opacity='0.38'
-                stroke-width='1.69165'
-                stroke-linecap='round'
-                stroke-linejoin='round'></path>
-              <path
-                id='Vector_2'
-                d='M57.7625 57.7565C73.3337 57.7565 85.9567 45.1335 85.9567 29.5623C85.9567 13.9911 73.3337 1.36816 57.7625 1.36816C42.1913 1.36816 29.5684 13.9911 29.5684 29.5623C29.5684 45.1335 42.1913 57.7565 57.7625 57.7565Z'
-                stroke='url(#paint1_linear_652_2483)'
-                stroke-opacity='0.38'
-                stroke-width='1.69165'
-                stroke-linecap='round'
-                stroke-linejoin='round'></path>
-            </g>
-            <defs>
-              <linearGradient
-                id='paint0_linear_652_2483'
-                x1='22.9435'
-                y1='90.1793'
-                x2='91.4553'
-                y2='136.7'
-                gradientUnits='userSpaceOnUse'
-              >
-                <stop stop-color='#22D96D'></stop>
-                <stop offset='1' stop-color='#514747'></stop>
-              </linearGradient>
-              <linearGradient
-                id='paint1_linear_652_2483'
-                x1='35.6312'
-                y1='10.2493'
-                x2='77.4995'
-                y2='62.6904'
-                gradientUnits='userSpaceOnUse'
-              >
-                <stop stop-color='#22D96D'></stop>
-                <stop offset='1' stop-color='#514747'></stop>
-              </linearGradient>
-            </defs>
-          </svg>
-        </div>
-      </div>
-
-      <div
-        class='container mb-5 group p-[25px] w-full max-w-[465px] after:content-[""] after:-z-10 after:absolute after:inset-[-1px] after:rounded-[inherit] after:bg-[conic-gradient(from_-65deg,_#002b10_-31%,_rgb(140,140,140,0.2)_53%,_rgb(2,47,20,0.7))] rounded-[13px] relative bg-black'
-      >
-        <h3 class='font-trakis text-primary text-[40px] uppercase'>
-          Nagła pomoc
-        </h3>
-        <div class="group-hover:top-[-30px] transition-all duration-500 ease-in-out relative top-0 pt-[40px]">
-          <p class='pt-[40px] text-white pb text-[15px]'>
-            Gdy zdarzy się sytuacja kryzysowa możesz na nas liczyć!
-          </p>
-          <svg
-            class='mt-[76px]'
-            width='126'
-            height='126'
-            viewBox='0 0 130 130'
-            fill='none'
-            xmlns='http://www.w3.org/2000/svg'
-          >
-            <g id='Group 1010108777'>
-              <path
-                id='Vector'
-                d='M38.549 1.36328H91.0747L128.249 38.5373V91.063L91.0747 128.237H38.549L1.375 91.063V38.5373L38.549 1.36328Z'
-                stroke='url(#paint0_linear_652_1691)'
-                stroke-opacity='0.38'
-                stroke-width='1.69165'
-                stroke-linecap='round'
-                stroke-linejoin='round'></path>
-              <path
-                id='Vector_2'
-                d='M64.8125 39.4258V64.8005'
-                stroke='url(#paint1_linear_652_1691)'
-                stroke-opacity='0.38'
-                stroke-width='1.69165'
-                stroke-linecap='round'
-                stroke-linejoin='round'></path>
-              <path
-                id='Vector_3'
-                d='M64.8125 90.1748H64.8759'
-                stroke='url(#paint2_linear_652_1691)'
-                stroke-opacity='0.38'
-                stroke-width='1.69165'
-                stroke-linecap='round'
-                stroke-linejoin='round'></path>
-            </g>
-            <defs>
-              <linearGradient
-                id='paint0_linear_652_1691'
-                x1='64.8118'
-                y1='1.36328'
-                x2='64.8118'
-                y2='128.237'
-                gradientUnits='userSpaceOnUse'
-              >
-                <stop stop-color='#22D96D'></stop>
-                <stop offset='1' stop-color='#514747'></stop>
-              </linearGradient>
-              <linearGradient
-                id='paint1_linear_652_1691'
-                x1='65.3125'
-                y1='39.4258'
-                x2='65.3125'
-                y2='64.8005'
-                gradientUnits='userSpaceOnUse'
-              >
-                <stop stop-color='#22D96D'></stop>
-                <stop offset='1' stop-color='#514747'></stop>
-              </linearGradient>
-              <linearGradient
-                id='paint2_linear_652_1691'
-                x1='64.8442'
-                y1='90.1748'
-                x2='64.8442'
-                y2='91.1748'
-                gradientUnits='userSpaceOnUse'
-              >
-                <stop stop-color='#22D96D'></stop>
-                <stop offset='1' stop-color='#514747'></stop>
-              </linearGradient>
-            </defs>
-          </svg>
-        </div>
-      </div>
+      <SolutionsCards />
 
     </div>
     <GlowButton text='Kontakt' href='/' />
@@ -218,24 +26,7 @@ import GlowButton from '../Shared/GlowButton.astro';
 </section>
 
 <style>
-  .container::before {
-    position: absolute;
-    content: '';
-    width: 100%;
-    height: 100%;
-    background-repeat: no-repeat;
-    background-position: bottom;
-    bottom: 0;
-    left: 0;
-    opacity: 0;
-    border-bottom-right-radius:13px;
-    border-bottom-left-radius:13px;
-    transition: opacity 0.5s ease-in-out;
-    background-image: url('/radial.png');
-  }
-  .container:hover::before {
-    opacity: 1;
-  }
+  
   section::after {
     position: absolute;
     content: '';
