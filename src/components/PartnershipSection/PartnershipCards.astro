@@ -5,141 +5,215 @@ import hands from '../../assets/hands-sm-cop.webp';
 import people from '../../assets/people-sm-cop.webp';
 import NormalButton from '../Shared/NormalButton.astro';
 ---
-<div class='lg:flex lg:items-center'>
-    <div
-      class='mt-[119px] lg:w-[70%] lg:mt-[60px] flex xl:flex-row flex-col items-start gap-[30px] px-[20px] xl:pl-[60px] xl:pr-0'
-    >
-      <div class='hidden xl:flex gap-[55px] relative'>
+
+<div id='box-one' class='lg:flex lg:items-center'>
+  <div
+    class='mt-[119px] lg:w-[70%] lg:mt-[60px] flex xl:flex-row flex-col items-start gap-[30px] px-[20px] xl:pl-[60px] xl:pr-0'
+  >
+    <div class='hidden xl:flex gap-[55px] relative'>
+      <div
+        class='hidden xl:flex flex-col justify-center items-center px-2.5 rounded-md border border-gray-600 border-solid bg-opacity-0 h-[50px] w-[50px]'
+        role='presentation'
+      >
         <div
-          class='hidden xl:flex flex-col justify-center items-center px-2.5 rounded-md border border-gray-600 border-solid bg-opacity-0 h-[50px] w-[50px]'
-          role='presentation'
+          class='flex shrink-0 bg-gray-600 rounded-full h-[15px] w-[15px]'
+          aria-hidden='true'
         >
-          <div
-            class='flex shrink-0 bg-gray-600 rounded-full h-[15px] w-[15px]'
-            aria-hidden='true'
-          >
-          </div>
-          <div
-            class='lg:absolute left-[18%] -z-1 top-[98%] -translate-x-1/2 h-[360px] 2xl:h-[442px] w-[1px] bg-gray-600'
-          >
-          </div>
         </div>
         <div
-          class='hidden xl:block my-auto text-xl tracking-tight text-gray-600'
+          class='lg:absolute left-[18%] -z-1 top-[98%] -translate-x-1/2 h-[360px] 2xl:h-[442px] w-[1px] bg-gray-600'
         >
-          [01]
         </div>
       </div>
-
-      <div class='lg:flex flex-col lg:pl-[45px]'>
-        <h2
-          class='text-[clamp(2rem,2vw,3rem)] mb-[30px] lg:mb-[37px] leading-[38.4px] text-pretty'
-        >
-          Skontaktuj się z nami
-        </h2>
-        <p class='text-textgrey text-[18px] lg:max-w-[90%]'>
-          Nawiąż z nami kontakt w najwygodniejszy dla Ciebie sposób—mailowo,
-          telefonicznie, przez Teams lub Signal. Jesteśmy dostępni, aby
-          odpowiedzieć na Twoje pytania i rozpocząć rozmowę o potrzebach Twojej
-          firmy w zakresie cyberbezpieczeństwa.
-        </p>
+      <div class='hidden xl:block my-auto text-xl tracking-tight text-gray-600'>
+        [01]
       </div>
     </div>
-    <div
-      class='mt-[60px] max-w-full lg:max-w-[38%] h-[350px] lg:h-[300px] 2xl:h-[400px] object-cover lg:pr-[85px]'
-    >
-      <Image class='object-cover h-full' src={phone} alt='close-up-phone' />
+
+    <div class='lg:flex flex-col lg:pl-[45px]'>
+      <h2
+        class='text-[clamp(2rem,2vw,3rem)] mb-[30px] lg:mb-[37px] leading-[38.4px] text-pretty'
+      >
+        Skontaktuj się z nami
+      </h2>
+      <p class='text-textgrey text-[18px] lg:max-w-[90%]'>
+        Nawiąż z nami kontakt w najwygodniejszy dla Ciebie sposób—mailowo,
+        telefonicznie, przez Teams lub Signal. Jesteśmy dostępni, aby
+        odpowiedzieć na Twoje pytania i rozpocząć rozmowę o potrzebach Twojej
+        firmy w zakresie cyberbezpieczeństwa.
+      </p>
     </div>
   </div>
+  <div
+    class='uno mt-[60px] max-w-full lg:max-w-[38%] h-[350px] lg:h-[300px] 2xl:h-[400px] object-cover lg:pr-[85px]'
+  >
+    <Image class='object-cover h-full' src={phone} alt='close-up-phone' />
+  </div>
+</div>
 
-  <div class='lg:flex lg:items-center'>
-    <div
-      class='mt-[119px] lg:w-[70%] lg:mt-[60px] flex xl:flex-row flex-col items-start gap-[30px] px-[20px] xl:pl-[60px] xl:pr-0'
-    >
-      <div class='hidden xl:flex gap-[55px] relative'>
+<div id='box-two' class='lg:flex lg:items-center'>
+  <div
+    class='mt-[119px] lg:w-[70%] lg:mt-[60px] flex xl:flex-row flex-col items-start gap-[30px] px-[20px] xl:pl-[60px] xl:pr-0'
+  >
+    <div class='hidden xl:flex gap-[55px] relative'>
+      <div
+        class='hidden xl:relative xl:bg-bg-silver xl:flex flex-col justify-center items-center px-2.5 rounded-md border border-gray-600 border-solid bg-opacity-0 h-[50px] w-[50px]'
+        role='presentation'
+      >
         <div
-          class='hidden xl:relative xl:bg-bg-silver xl:flex flex-col justify-center items-center px-2.5 rounded-md border border-gray-600 border-solid bg-opacity-0 h-[50px] w-[50px]'
-          role='presentation'
+          class='flex shrink-0 bg-gray-600 rounded-full h-[15px] w-[15px]'
+          aria-hidden='true'
         >
-          <div
-            class='flex shrink-0 bg-gray-600 rounded-full h-[15px] w-[15px]'
-            aria-hidden='true'
-          >
-          </div>
-          <div
-            class='lg:absolute left-[49%] -z-1 top-[99%] -translate-x-1/2 h-[300px] 2xl:h-[380px] w-[1px] bg-gray-600'
-          >
-          </div>
         </div>
         <div
-          class='hidden xl:block my-auto text-xl tracking-tight text-gray-600'
+          class='lg:absolute left-[49%] -z-1 top-[99%] -translate-x-1/2 h-[300px] 2xl:h-[380px] w-[1px] bg-gray-600'
         >
-          [02]
         </div>
       </div>
-
-      <div class='lg:flex flex-col lg:pl-[45px]'>
-        <h2
-          class='text-[clamp(2rem,2vw,3rem)] mb-[30px] lg:mb-[37px] leading-[38.4px] text-pretty'
-        >
-          Ustalenia ram projektu
-        </h2>
-        <p class='text-textgrey text-[18px] lg:max-w-[90%]'>
-          Nasz przedstawiciel skontaktuje się z Tobą, aby wspólnie ustalić ramy
-          projektu. Zrozumiemy Twoje wymagania i oczekiwania, aby dostosować
-          nasze usługi do specyfiki Twojej instytucji.
-        </p>
+      <div class='hidden xl:block my-auto text-xl tracking-tight text-gray-600'>
+        [02]
       </div>
     </div>
-    <div
-      class='mt-[60px] max-w-full lg:max-w-[38%] h-[350px] lg:h-[300px] 2xl:h-[400px] object-cover lg:pr-[85px]'
-    >
-      <Image class='object-cover h-full' src={hands} alt='close-up-phone' />
+
+    <div class='lg:flex flex-col lg:pl-[45px]'>
+      <h2
+        class='text-[clamp(2rem,2vw,3rem)] mb-[30px] lg:mb-[37px] leading-[38.4px] text-pretty'
+      >
+        Ustalenia ram projektu
+      </h2>
+      <p class='text-textgrey text-[18px] lg:max-w-[90%]'>
+        Nasz przedstawiciel skontaktuje się z Tobą, aby wspólnie ustalić ramy
+        projektu. Zrozumiemy Twoje wymagania i oczekiwania, aby dostosować nasze
+        usługi do specyfiki Twojej instytucji.
+      </p>
     </div>
   </div>
+  <div
+    class='dos mt-[60px] max-w-full lg:max-w-[38%] h-[350px] lg:h-[300px] 2xl:h-[400px] object-cover lg:pr-[85px]'
+  >
+    <Image class='object-cover h-full' src={hands} alt='close-up-phone' />
+  </div>
+</div>
 
-  <div class='lg:flex lg:items-center'>
-    <div
-      class='mt-[119px] lg:w-[70%] lg:mt-[60px] flex xl:flex-row flex-col items-start gap-[30px] px-[20px] xl:pl-[60px] lg:pr-0'
-    >
-      <div class='hidden xl:flex gap-[55px]'>
+<div id='box-three' class='lg:flex lg:items-center'>
+  <div
+    class='mt-[119px] lg:w-[70%] lg:mt-[60px] flex xl:flex-row flex-col items-start gap-[30px] px-[20px] xl:pl-[60px] lg:pr-0'
+  >
+    <div class='hidden xl:flex gap-[55px]'>
+      <div
+        class='xl:relative xl:bg-bg-silver hidden xl:flex flex-col justify-center items-center px-2.5 rounded-md border border-gray-600 border-solid bg-opacity-0 h-[50px] w-[50px]'
+        role='presentation'
+      >
         <div
-          class='xl:relative xl:bg-bg-silver hidden xl:flex flex-col justify-center items-center px-2.5 rounded-md border border-gray-600 border-solid bg-opacity-0 h-[50px] w-[50px]'
-          role='presentation'
+          class='flex shrink-0 bg-gray-600 rounded-full h-[15px] w-[15px]'
+          aria-hidden='true'
         >
-          <div
-            class='flex shrink-0 bg-gray-600 rounded-full h-[15px] w-[15px]'
-            aria-hidden='true'
-          >
-          </div>
-        </div>
-        <div
-          class='hidden xl:block my-auto text-xl tracking-tight text-gray-600'
-        >
-          [03]
         </div>
       </div>
-      <div class='lg:flex flex-col lg:pl-[45px]'>
-        <h2
-          class='text-[clamp(2rem,2vw,3rem)] mb-[30px] lg:mb-[37px] leading-[38.4px] text-pretty'
-        >
-          Dobór zespołu ekspertów
-        </h2>
-        <p class='text-textgrey text-[18px] lg:max-w-[90%]'>
-          Dobierzemy grono ekspertów, którzy pomogą Ci rozwiązać problemy
-          związane z bezpieczeństwem w Twojej firmie. Niezależnie od tego, czy
-          potrzebujesz dedykowanego inżyniera na pełen etat, wsparcia na kilka
-          dni w tygodniu czy nagłej pomocy w sytuacji kryzysowej—jesteśmy tu, by
-          razem z wami wejść na szczyt cyberbezpieczeństwa.
-        </p>
-        <div class='mt-[47px]'>
-          <NormalButton text='Kontakt' href='/' />
-        </div>
+      <div class='hidden xl:block my-auto text-xl tracking-tight text-gray-600'>
+        [03]
       </div>
     </div>
-    <div
-      class='mt-[60px] max-w-full lg:max-w-[38%] h-[350px] lg:h-[300px] 2xl:h-[400px] object-cover lg:pr-[85px]'
-    >
-      <Image class='object-cover h-full' src={people} alt='people-meeting' />
+    <div class='lg:flex flex-col lg:pl-[45px]'>
+      <h2
+        class='text-[clamp(2rem,2vw,3rem)] mb-[30px] lg:mb-[37px] leading-[38.4px] text-pretty'
+      >
+        Dobór zespołu ekspertów
+      </h2>
+      <p class='text-textgrey text-[18px] lg:max-w-[90%]'>
+        Dobierzemy grono ekspertów, którzy pomogą Ci rozwiązać problemy związane
+        z bezpieczeństwem w Twojej firmie. Niezależnie od tego, czy potrzebujesz
+        dedykowanego inżyniera na pełen etat, wsparcia na kilka dni w tygodniu
+        czy nagłej pomocy w sytuacji kryzysowej—jesteśmy tu, by razem z wami
+        wejść na szczyt cyberbezpieczeństwa.
+      </p>
+      <div class='mt-[47px]'>
+        <NormalButton text='Kontakt' href='/' />
+      </div>
     </div>
   </div>
+  <div
+    class='tres mt-[60px] max-w-full lg:max-w-[38%] h-[350px] lg:h-[300px] 2xl:h-[400px] object-cover lg:pr-[85px]'
+  >
+    <Image class='object-cover h-full' src={people} alt='people-meeting' />
+  </div>
+</div>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+  // Select all the box containers
+  const boxes = document.querySelectorAll('#box-one, #box-two, #box-three');
+  
+  // Select all image containers
+  const imageContainers = document.querySelectorAll('.uno, .dos, .tres');
+  
+  // Function to reset all image containers
+  function resetImageContainers() {
+    imageContainers.forEach(container => {
+      if (container instanceof HTMLElement) {
+        container.style.transform = 'translateX(100%)';
+        container.style.opacity = '0';
+        container.style.transition = 'transform 0.5s ease-out, opacity 0.5s ease-out';
+      }
+    });
+  }
+
+  // Function to initialize hover effects
+  function initHoverEffects() {
+    if (window.innerWidth >= 1024) {
+      // Initially hide all image containers
+      resetImageContainers();
+
+      // Add event listeners to each box
+      boxes.forEach((box, index) => {
+        if (box instanceof HTMLElement) {
+          box.addEventListener('mouseenter', function() {
+            // Reset all image containers first
+            resetImageContainers();
+            
+            // Show the corresponding image container
+            const imageContainer = imageContainers[index];
+            if (imageContainer instanceof HTMLElement) {
+              imageContainer.style.transform = 'translateX(0)';
+              imageContainer.style.opacity = '1';
+            }
+          });
+
+          box.addEventListener('mouseleave', function() {
+            // Hide the corresponding image container
+            const imageContainer = imageContainers[index];
+            if (imageContainer instanceof HTMLElement) {
+              imageContainer.style.transform = 'translateX(100%)';
+              imageContainer.style.opacity = '0';
+            }
+          });
+        }
+      });
+
+      // Optional: Show the first image container by default
+      if (imageContainers.length > 0) {
+        const firstContainer = imageContainers[0];
+        if (firstContainer instanceof HTMLElement) {
+          firstContainer.style.transform = 'translateX(0)';
+          firstContainer.style.opacity = '1';
+        }
+      }
+    } else {
+      // For screens smaller than 1024px, reset and show all images
+      imageContainers.forEach(container => {
+        if (container instanceof HTMLElement) {
+          container.style.transform = 'translateX(0)';
+          container.style.opacity = '1';
+          container.style.transition = 'none';
+        }
+      });
+    }
+  }
+
+  // Initialize hover effects on load
+  initHoverEffects();
+
+  // Add resize event listener to handle responsiveness
+  window.addEventListener('resize', initHoverEffects);
+});
+</script>
