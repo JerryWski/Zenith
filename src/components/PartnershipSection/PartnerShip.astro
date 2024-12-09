@@ -14,7 +14,95 @@ import NormalButton from '../Shared/NormalButton.astro';
     <h2 class='text-[clamp(2rem,2vw,3rem)] text-center'>PROCES WSPÓŁPRACY</h2>
   </div>
 
-  <div class="lg:flex lg:items-center">
+  <div class='lg:flex lg:items-center'>
+    <div
+      class='mt-[119px] lg:mt-[60px] flex xl:flex-row flex-col items-start gap-[30px] px-[20px] xl:pl-[60px] xl:pr-0'
+    >
+      <div class='hidden xl:flex gap-[55px] relative'>
+        <div
+          class='hidden xl:flex flex-col justify-center items-center px-2.5 rounded-md border border-gray-600 border-solid bg-opacity-0 h-[50px] w-[50px]'
+          role='presentation'
+        >
+          <div
+            class='flex shrink-0 bg-gray-600 rounded-full h-[15px] w-[15px]'
+            aria-hidden='true'
+          >
+          </div>
+          <div
+            class='lg:absolute left-[18%] -z-1 top-[98%] -translate-x-1/2 h-[325px] 2xl:h-[432px] w-[2px] bg-gray-600'
+          >
+          </div>
+        </div>
+        <div
+          class='hidden xl:block my-auto text-xl tracking-tight text-gray-600'
+        >
+          [01]
+        </div>
+      </div>
+
+      <div class='lg:flex flex-col lg:pl-[45px]'>
+        <h2
+          class='text-[clamp(2rem,2vw,3rem)] mb-[30px] lg:mb-[37px] leading-[38.4px] text-pretty'
+        >
+          Skontaktuj się z nami
+        </h2>
+        <p class='text-textgrey text-[18px] lg:max-w-[90%]'>
+          Nawiąż z nami kontakt w najwygodniejszy dla Ciebie sposób—mailowo,
+          telefonicznie, przez Teams lub Signal. Jesteśmy dostępni, aby
+          odpowiedzieć na Twoje pytania i rozpocząć rozmowę o potrzebach Twojej
+          firmy w zakresie cyberbezpieczeństwa.
+        </p>
+      </div>
+    </div>
+    <div
+      class='mt-[60px] max-w-full lg:max-w-[50%] h-[350px] lg:h-[300px] 2xl:h-[400px] object-cover lg:pr-[85px]'
+    >
+      <Image class='object-cover h-full' src={phone} alt='close-up-phone' />
+    </div>
+  </div>
+
+  <div class='lg:flex lg:items-center'>
+    <div
+      class='mt-[119px] lg:mt-[60px] flex xl:flex-row flex-col items-start gap-[30px] px-[20px] xl:pl-[60px]'
+    >
+      <div class='hidden xl:flex gap-[55px]'>
+        <div
+          class='xl:relative xl:bg-bg-silver hidden xl:flex flex-col justify-center items-center px-2.5 rounded-md border border-gray-600 border-solid bg-opacity-0 h-[50px] w-[50px]'
+          role='presentation'
+        >
+          <div
+            class='flex shrink-0 bg-gray-600 rounded-full h-[15px] w-[15px]'
+            aria-hidden='true'
+          >
+          </div>
+        </div>
+        <div
+          class='hidden xl:block my-auto text-xl tracking-tight text-gray-600'
+        >
+          [02]
+        </div>
+      </div>
+      <div class='lg:flex flex-col lg:pl-[45px]'>
+        <h2
+          class='text-[clamp(2rem,2vw,3rem)] mb-[30px] lg:mb-[37px] leading-[38.4px] text-pretty'
+        >
+          Ustalenie ram projektu
+        </h2>
+        <p class='text-textgrey text-[18px] lg:max-w-[90%]'>
+          Nasz przedstawiciel skontaktuje się z Tobą, aby wspólnie ustalić ramy
+          projektu. Zrozumiemy Twoje wymagania i oczekiwania, aby dostosować
+          nasze usługi do specyfiki Twojej instytucji.
+        </p>
+      </div>
+    </div>
+    <div
+      class='mt-[60px] max-w-full lg:max-w-[50%] h-[350px] lg:h-[300px] 2xl:h-[400px] object-cover lg:pr-[85px]'
+    >
+      <Image class='object-cover h-full' src={phone} alt='close-up-phone' />
+    </div>
+  </div>
+
+  <div class='lg:flex lg:items-center'>
     <div
       class='mt-[119px] lg:mt-[60px] flex xl:flex-row flex-col items-start gap-[30px] px-[20px] xl:pl-[60px]'
     >
@@ -29,7 +117,9 @@ import NormalButton from '../Shared/NormalButton.astro';
           >
           </div>
         </div>
-        <div class='hidden xl:block my-auto text-xl tracking-tight text-gray-600'>
+        <div
+          class='hidden xl:block my-auto text-xl tracking-tight text-gray-600'
+        >
           [01]
         </div>
       </div>
@@ -47,12 +137,14 @@ import NormalButton from '../Shared/NormalButton.astro';
         </p>
       </div>
     </div>
-    <div class='mt-[60px] max-w-full lg:max-w-[50%] h-[350px] lg:h-[300px] 2xl:h-[400px] object-cover lg:pr-[85px]'>
+    <div
+      class='mt-[60px] max-w-full lg:max-w-[50%] h-[350px] lg:h-[300px] 2xl:h-[400px] object-cover lg:pr-[85px]'
+    >
       <Image class='object-cover h-full' src={phone} alt='close-up-phone' />
     </div>
   </div>
 
-  <div class='mt-[119px] flex flex-col items-start gap-[30px] px-[20px]'>
+  <!-- <div class='mt-[119px] flex flex-col items-start gap-[30px] px-[20px]'>
     <h2 class='text-[clamp(2rem,2vw,3rem)] leading-[38.4px] text-pretty'>
       Ustalenie ram projektu
     </h2>
@@ -82,6 +174,5 @@ import NormalButton from '../Shared/NormalButton.astro';
     </div>
   </div>
   <div class='mt-[60px] max-w-full h-[350px] object-cover'>
-    <Image class='object-cover h-full' src={people} alt='close-up-phone' />
-  </div>
+    <Image class='object-cover h-full' src={people} alt='close-up-phone' /> -->
 </section>
