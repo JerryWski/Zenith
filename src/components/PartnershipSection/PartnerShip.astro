@@ -63,16 +63,20 @@ import NormalButton from '../Shared/NormalButton.astro';
 
   <div class='lg:flex lg:items-center'>
     <div
-      class='mt-[119px] lg:mt-[60px] flex xl:flex-row flex-col items-start gap-[30px] px-[20px] xl:pl-[60px]'
+      class='mt-[119px] lg:mt-[60px] flex xl:flex-row flex-col items-start gap-[30px] px-[20px] xl:pl-[60px] xl:pr-0'
     >
-      <div class='hidden xl:flex gap-[55px]'>
+      <div class='hidden xl:flex gap-[55px] relative'>
         <div
-          class='xl:relative xl:bg-bg-silver hidden xl:flex flex-col justify-center items-center px-2.5 rounded-md border border-gray-600 border-solid bg-opacity-0 h-[50px] w-[50px]'
+          class='hidden xl:relative xl:bg-bg-silver xl:flex flex-col justify-center items-center px-2.5 rounded-md border border-gray-600 border-solid bg-opacity-0 h-[50px] w-[50px]'
           role='presentation'
         >
           <div
             class='flex shrink-0 bg-gray-600 rounded-full h-[15px] w-[15px]'
             aria-hidden='true'
+          >
+          </div>
+          <div
+            class='lg:absolute left-[18%] -z-1 top-[98%] -translate-x-1/2 h-[325px] 2xl:h-[432px] w-[2px] bg-gray-600'
           >
           </div>
         </div>
@@ -82,16 +86,18 @@ import NormalButton from '../Shared/NormalButton.astro';
           [02]
         </div>
       </div>
+
       <div class='lg:flex flex-col lg:pl-[45px]'>
         <h2
           class='text-[clamp(2rem,2vw,3rem)] mb-[30px] lg:mb-[37px] leading-[38.4px] text-pretty'
         >
-          Ustalenie ram projektu
+          Ustalenia ram projektu
         </h2>
         <p class='text-textgrey text-[18px] lg:max-w-[90%]'>
-          Nasz przedstawiciel skontaktuje się z Tobą, aby wspólnie ustalić ramy
-          projektu. Zrozumiemy Twoje wymagania i oczekiwania, aby dostosować
-          nasze usługi do specyfiki Twojej instytucji.
+          Nawiąż z nami kontakt w najwygodniejszy dla Ciebie sposób—mailowo,
+          telefonicznie, przez Teams lub Signal. Jesteśmy dostępni, aby
+          odpowiedzieć na Twoje pytania i rozpocząć rozmowę o potrzebach Twojej
+          firmy w zakresie cyberbezpieczeństwa.
         </p>
       </div>
     </div>
@@ -101,6 +107,8 @@ import NormalButton from '../Shared/NormalButton.astro';
       <Image class='object-cover h-full' src={phone} alt='close-up-phone' />
     </div>
   </div>
+
+  
 
   <div class='lg:flex lg:items-center'>
     <div
