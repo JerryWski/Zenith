@@ -33,7 +33,7 @@
     @apply after:transition-all after:duration-300 after:ease-in-out after:content-[""] after:-z-10 after:absolute after:inset-[-1px] after:rounded-[inherit] after:bg-[conic-gradient(from_-307deg,_#10ff2ad6_-31%,_rgb(140,140,140,0.7)_53%,_rgb(18,234,108,0.7))];
   }
   .btn-after-hover {
-    @apply after:hover:bg-[conic-gradient(from_-69deg,_transparent_-35%,_#22d96e)];
+    @apply after:hover:bg-[conic-gradient(from_-64deg,_transparent_-75%,_#01ea2621)];
   }
   .btn-before {
     @apply before:right-[116px] before:top-0 before:w-[10.5px] before:h-[0.5px] before:shadow-[95px_18px_21px_16px_rgb(54,255,131)] 
