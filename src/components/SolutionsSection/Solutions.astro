@@ -3,26 +3,27 @@ import GlowButton from '../Shared/GlowButton.astro';
 import SolutionsCards from './SolutionsCards.astro';
 ---
 
-<section class='font-manrope relative after:bg-no-repeat after:bg-[position:-887.3px_-610px] after:blur-md lg:after:bg-[position:-727px_-720px] after:bg-[length:1530px] lg:after:bg-[length:1680px]'>
-  <div class='pt-[113px] lg:pt-[200px] flex flex-col gap-[47px] items-start px-5 lg:px-[120px] min-[1800px]:px-[220px]'>
-    <p class='font-trakis text-primary tracking-[-0.6px] text-xl'>
-      [004 INDYWIDUALNE ROZWIĄZANIA]
-    </p>
-    <h2 class='text-[clamp(2rem,5vw,3rem)] lg:leading-[52px] uppercase text-white'>
-      Elastyczne wsparcie dopasowane do Twoich potrzeb
-    </h2>
-  </div>
-
-  <div
-    class='mt-[85px] mx-5 flex flex-col gap-[25px] items-center lg:items-center justify-center'
-  >
-    <div class='lg:flex gap-5 mb-8 lg:w-full justify-center'>
-
-      <SolutionsCards />
-
+<section class='font-manrope relative lg:flex lg:flex-col lg:items-start after:bg-no-repeat after:bg-[position:-887.3px_-610px] after:blur-md lg:after:bg-[position:-727px_-720px] after:bg-[length:1530px] lg:after:bg-[length:1680px]'>
+  
+  <div class="lg:mx-[120px]">
+    <div class='pt-[113px] lg:pt-[200px] flex flex-col gap-[47px] items-start px-5 lg:px-[20px] min-[1800px]:px-[220px]'>
+      <p class='font-trakis text-primary tracking-[-0.6px] text-xl'>
+        [004 INDYWIDUALNE ROZWIĄZANIA]
+      </p>
+      <h2 class='text-[clamp(2rem,5vw,3rem)] lg:max-w-[808px] lg:leading-[52px] uppercase text-white'>
+        Elastyczne wsparcie dopasowane do Twoich potrzeb
+      </h2>
     </div>
-    <GlowButton text='Kontakt' href='/' />
+    <div
+      class='mt-[81px] lg:mt-[121px] mx-5 lg:mx-0 flex flex-col gap-[25px] items-center lg:items-center justify-center'
+    >
+      <div class='lg:flex gap-5 mb-8 lg:w-full min-[1800px]:px-[220px] justify-center'>
+        <SolutionsCards />
+      </div>
+      <GlowButton text='Kontakt' href='/' />
+    </div>
   </div>
+
 </section>
 
 <style>
