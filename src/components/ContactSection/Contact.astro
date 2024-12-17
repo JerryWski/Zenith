@@ -1,19 +1,19 @@
 ---
 import { Icon } from 'astro-icon/components';
 import { Image } from 'astro:assets';
-import image3 from '../../assets/image3.webp';
+import image5 from '../../assets/imgfooter2.webp';
 ---
 
 <section
-  class='lg:after:bg-[url(/src/icons/vector.svg)] lg:after:-z-[3] after:bg-[center_20px] lg:after:bg-[-330px_40px] after:absolute after:inset-0 after:bg-no-repeat after:bg-[1140px_auto] lg:before:-z-10 lg:before:block before:hidden before:absolute before:bg-no-repeat before:inset-0 before:bg-[url(/src/icons/vector.svg)] before:bg-[754px_120px] before:bg-[1172px auto] relative overflow-hidden lg:flex lg:flex-col lg:justify-center lg:h-[400px]'
+  class='lg:after:bg-[url(/src/icons/vector.svg)] lg:after:-z-[3] after:bg-[center_20px] lg:after:bg-[-330px_-30px] after:absolute after:inset-0 after:bg-no-repeat after:bg-[1140px_auto] lg:before:-z-10 lg:before:block before:hidden before:absolute before:bg-no-repeat before:inset-0 before:bg-[url(/src/icons/vector.svg)] before:bg-[754px_120px] before:bg-[1172px auto] relative overflow-hidden lg:flex lg:flex-col lg:justify-center lg:h-[400px]'
 >
   <Icon class='lg:hidden absolute w-full -z-[2]' name='vector' height={400} />
   <div
-    class='lg:absolute lg:w-full lg:left-1/2 lg:top-1/2 lg:-translate-x-1/2 lg:[--tw-translate-y:72%] flex flex-col lg:flex-row justify-center lg:justify-evenly items-start lg:items-center pl-[20px] lg:z-10'
+    class='lg:absolute lg:w-full min-[2000px]:justify-center min-[2000px]:gap-[200px] lg:left-1/2 lg:top-1/2 lg:-translate-x-1/2 lg:[--tw-translate-y:72%] min-[2000px]:[--tw-translate-y:22%] flex flex-col lg:flex-row justify-center lg:justify-evenly items-start lg:items-center pl-[20px] lg:z-10'
   >
     <div class='lg:flex lg:justify-center lg:items-center lg:gap-6'>
       <Icon name='frame2' width={62} height={62} class='mt-[60px] lg:mt-0' />
-      <p class='text-textgrey hidden lg:inline-block lg:text-[10px]'>
+      <p class='text-[#68767C] hidden lg:inline-block lg:text-[10px] uppercase font-bold'>
         All rights reserved COPYRIGHTS SECURITY ZENITH
       </p>
     </div>
@@ -43,7 +43,7 @@ import image3 from '../../assets/image3.webp';
   <div class='overflow-x-clip lg:overflow-visible'>
     <Icon
       name='zenith-logo'
-      class='w-[105%] lg:h-[200px] lg:w-full h-auto lg:absolute lg:bottom-0'
+      class='w-[155%] lg:h-fit lg:w-full h-auto lg:absolute lg:bottom-0'
     />
   </div>
   <p
@@ -51,10 +51,12 @@ import image3 from '../../assets/image3.webp';
   >
     All rights reserved COPYRIGHTS SECURITY ZENITH
   </p>
-  <Image
-    class='bottom-0 absolute -z-[1] lg:bottom-[-300px] lg:object-contain lg:h-[702px]'
-    src={image3}
-    alt='snowy-mountain'
-  />
+  <div>
+    <Image
+      class='bottom-[30px] absolute -z-[1] lg:bottom-[-145px] lg:object-contain lg:h-[702px]'
+      src={image5}
+      alt='snowy-mountain'
+    />
+  </div>
 </section>
 

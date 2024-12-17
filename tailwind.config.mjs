@@ -14,6 +14,8 @@ export default {
         'white':'#ffff',
         'grey':'#52555A',
         'silver':'#999EA6',
+        'smtext':'#808080',
+        'footergrey':'#68767C',
         'lightsilver':'#D8D8D5',
         'textgrey':'#4C5D64',
         'primary': '#22D96D',
