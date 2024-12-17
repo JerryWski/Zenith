@@ -1,15 +1,19 @@
 ---
 import { Icon } from 'astro-icon/components';
 import GlowButton from '../Shared/GlowButton.astro';
+import Lottie from '../../utils/Lottie'
 ---
 
 <section class='relative mt-[100px] lg:mt-0 px-[17px]'>
-  <Icon
+  <!-- <Icon
     class='absolute lg:top-[calc(850px-10%)] 2xl:w-[250px] 2xl:h-[250px] top-[calc(900px-10%)] left-[calc(50%)] transform -translate-x-1/2 -translate-y-1/2'
     width={200}
     height={200}
     name='frame'
-  />
+  /> -->
+  <div class='absolute lg:top-[calc(850px-10%)] top-[calc(900px-10%)] left-[calc(50%)] transform -translate-x-1/2 -translate-y-1/2' >
+    <Lottie client:only></Lottie>
+  </div>
   <div
     class='wrapper opacity-60 bg-no-repeat absolute inset-0 -z-10 bottom-[0px] right-0 left-0 top-[341px] h-[800px]'
   >
