@@ -8,29 +8,32 @@ import { Icon } from 'astro-icon/components';
 <header>
   <nav class='flex flex-col items-center justify-between'>
     <a class='block pt-[39px] pb-[31px]' href='/' aria-label='Home'>
-      <Icon class='h-auto w-[234px] lg:hidden' name="logo"/>
-      <!-- <Image
-        class='h-auto w-max'
-        src={logo}
-        alt='spinning-logo'
-        loading={'eager'}
-      /> -->
+      <Icon class='h-auto w-[234px] lg:hidden' name='logo' />
     </a>
-    <div class='flex justify-between items-center w-full px-5 lg:px-0 gap-[20px]'>
-      <div class="tracking-[-0.48px] lg:ml-[120px] font-medium leading-normal font-manrope">
+    <div
+      class='flex justify-between items-center w-full px-5 lg:px-0 gap-[20px]'
+    >
+      <div
+        class='tracking-[-0.48px] lg:ml-[120px] font-medium leading-normal font-manrope'
+      >
         <p class='text-white text-[clamp(.7rem,3.5vw,1rem)]'>
-          <span class='text-primary'>[T]</span> +48 691 981 346
+          <a href='tel:+48691981346'
+            ><span class='text-primary'>[T]</span> +48 691 981 346</a
+          >
         </p>
         <p class='text-white text-[clamp(.7rem,3.5vw,1rem)]'>
-          <span class='text-primary'>[E]</span> office@security-zenith.com
+          <a href='mailto:office@security-zenith.com'
+            ><span class='text-primary'>[E]</span> office@security-zenith.com</a
+          >
         </p>
       </div>
-      <Icon class='h-auto lg:w-[300px] w-[234px] hidden lg:inline-flex' name="logo"/>
-      <div class="lg:mr-[120px]">
+      <Icon
+        class='h-auto lg:w-[300px] w-[234px] hidden lg:inline-flex'
+        name='logo'
+      />
+      <div class='lg:mr-[120px]'>
         <GlowButton text='Sprawdź' href='/' />
       </div>
     </div>
   </nav>
 </header>
-
-
