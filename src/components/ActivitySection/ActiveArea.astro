@@ -7,8 +7,9 @@ import { Image } from 'astro:assets';
 import charts2 from '../../assets/charts2.png';
 import pyramid from '../../assets/pyramid.webp';
 import effects from '../../assets/effects.webp';
-import chart3 from '../../assets/charts3.png';
+import monitorchart from '../../assets/monitorchart.png';
 import chart5 from '../../assets/chart4-1.png';
+import Monitor from '../../utils/Monitor';
 ---
 
 <section class='px-[18px] lg:px-[120px] mt-[150px] overflow-hidden'>
@@ -56,11 +57,20 @@ import chart5 from '../../assets/chart4-1.png';
     class='lg:flex lg:items-center lg:justify-center lg:gap-24 2xl:gap-[100px]'
   >
     <MonitorProcess />
-    <Image
+    <!-- <Image
       class='mt-[95px] lg:max-w-[50%] xl:max-w-[50%]'
       src={chart3}
       alt='chart-diagram'
-    />
+    /> -->
+    <div class="relative">
+      <Image
+      class='mt-[95px] object-contain'
+      src={monitorchart}
+      alt='chart-diagram'
+    >
+      </Image>
+      <Monitor client:only/>
+    </div>
   </div>
   <div
     class='lg:flex lg:items-center lg:justify-center lg:gap-24 lg:my-[120px] 2xl:gap-[100px]'

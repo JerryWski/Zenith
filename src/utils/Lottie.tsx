@@ -53,7 +53,7 @@ const LogoAnime: React.FC = () => {
           autoplay={false}
           loop={false}
           onComplete={() => {
-            console.log("complete");
+            
             logoRef.current?.goToAndStop(45, true);
           }}
         />
