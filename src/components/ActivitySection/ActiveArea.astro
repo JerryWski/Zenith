@@ -4,12 +4,12 @@ import SecureProcess from './Activities/SecureProcess.astro';
 import MonitorProcess from './Activities/MonitorProcess.astro';
 import ConsultingProcess from './Activities/ConsultingProcess.astro';
 import { Image } from 'astro:assets';
-import charts2 from '../../assets/charts2.png';
-import pyramid from '../../assets/pyramid.webp';
+import pyramid2 from '../../assets/pyramid2.webp';
 import effects from '../../assets/effects.webp';
 import monitorchart from '../../assets/monitorchart.png';
 import chart5 from '../../assets/chart4-1.png';
 import Monitor from '../../utils/Monitor';
+import AutoLottie from '../../utils/AutoLottie';
 ---
 
 <section class='px-[18px] lg:px-[120px] mt-[150px] overflow-hidden'>
@@ -27,18 +27,14 @@ import Monitor from '../../utils/Monitor';
   </div>
 
   <div
-    class='lg:flex lg:items-center lg:justify-center lg:gap-24 2xl:gap-[300px]'
+    class='lg:flex lg:items-center lg:justify-center lg:gap-24 2xl:gap-[50px]'
   >
     <AutoProcess />
     <div class='relative'>
+      <AutoLottie client:only/>
       <Image
-        class='mt-[61px] object-contain lg:relative lg:mt-[-50px]'
-        src={charts2}
-        alt='chart-diagram'
-      />
-      <Image
-        class='img absolute bottom-[-183px] md:bottom-[-210px] md:max-w-[70%] md:left-[190px] lg:left-[75px] lg:max-w-[100%] xl:bottom-[-246px] left-[75px] max-w-[100%] -z-[100]'
-        src={pyramid}
+        class='absolute bottom-[-200px] lg:bottom-[-243px] md:max-w-[70%] md:left-[190px] lg:h-[330px] lg:left-[45px] lg:max-w-[120%] left-[75px] -z-[100]'
+        src={pyramid2}
         alt='pyramid-icon'
       />
     </div>
