@@ -1,8 +1,19 @@
+import { shorthash } from 'astro/runtime/server/shorthash.js';
+
 /** @type {import('tailwindcss').Config} */
 export default {
   content: ['./src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}'],
   theme: {
     extend: {
+      keyframes: {
+        showup: {
+          '0%%': { top: '-350px' },
+          '100%': { top: '-40px'},
+        }
+      },
+      animation: {
+        showup: 'showup 3s ease-in-out both'
+      },
       fontFamily:{
         'trakis':['Triakis', 'sans-serif'],
         'manrope':['Manrope', 'sans-serif']
