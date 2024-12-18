@@ -42,7 +42,7 @@ const LogoAnime: React.FC = () => {
   return (
     <div
       ref={containerRef}
-      className='w-[250px] h-[250px] xl:w-[387px] xl:h-[285px] absolute bottom-[-40px] xl:bottom-[52px] left-10'
+      className='w-[250px] h-[250px] sm:w-[375px] lg:w-[300px] lg:h-[172px] xl:w-[387px] xl:h-[285px] absolute bottom-[-40px] sm:bottom-[80px] xl:bottom-[52px] left-10'
     >
       <Lottie
         lottieRef={logoRef}
