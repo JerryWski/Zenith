@@ -186,15 +186,15 @@ import NormalButton from '../Shared/NormalButton.astro';
       observer.observe(container);
     });
 
-    function handleResize() {
-      if (window.innerWidth < 1024) {
-        boxContainers.forEach((container) => {
-          animateImageContainer(container);
-          observer.unobserve(container);
-        });
-      }
-    }
-    window.addEventListener('resize', handleResize);
-    handleResize();
+    // function handleResize() {
+    //   if (window.innerWidth < 1024) {
+    //     boxContainers.forEach((container) => {
+    //       animateImageContainer(container);
+    //       observer.unobserve(container);
+    //     });
+    //   }
+    // }
+    // window.addEventListener('resize', handleResize);
+    // handleResize();
   });
 </script>
