@@ -7,10 +7,11 @@ import { Image } from 'astro:assets';
 import pyramid2 from '../../assets/pyramid2.webp';
 import chart2 from '../../assets/chart2.png';
 import monitorchart from '../../assets/monitorchart.png';
-import chart5 from '../../assets/chart4-1.png';
+import chart4 from '../../assets/chart4.webp';
 import Monitor from '../../utils/Monitor';
 import AutoLottie from '../../utils/AutoLottie';
 import SupportLottie from '../../utils/SupportLottie';
+import ConsulLottie from '../../utils/ConsulLottie';
 ---
 
 <section class='px-[18px] lg:px-[120px] mt-[150px] overflow-hidden'>
@@ -73,10 +74,13 @@ import SupportLottie from '../../utils/SupportLottie';
     class='lg:flex lg:items-center lg:justify-center lg:gap-24 lg:my-[120px] 2xl:gap-[100px]'
   >
     <ConsultingProcess />
-    <Image
-      class='mt-[53px] lg:mt-0 mb-[180px] lg:mb-0 lg:max-w-[50%] lg:order-[-1]'
-      src={chart5}
-      alt='chart-diagram'
-    />
+    <div class="relative  lg:order-[-1]">
+      <Image
+        class='mt-[53px] lg:mt-0 mb-[180px] lg:mb-0 lg:max-w-[100%]'
+        src={chart4}
+        alt='chart-diagram'
+      />
+      <ConsulLottie client:only />
+    </div>
   </div>
 </section>
