@@ -1,8 +1,10 @@
 ---
-import PartnershipCard from './PartnershipCards.astro'
+import PartnershipCard from './PartnershipCards.astro';
 ---
 
-<section class='bg-bg-silver font-manrope lg:mx-[120px] max-w-[2200px] lg:pb-[120px] lg:overflow-hidden'>
+<section
+  class='bg-bg-silver font-manrope lg:mx-[120px] max-w-[2200px] lg:pb-[120px] lg:overflow-hidden'
+>
   <div class='pt-[147px] flex flex-col gap-[47px] items-center'>
     <p class='font-trakis uppercase tracking-[-0.6px] text-xl'>
       [003 tak pracujemy]
@@ -10,12 +12,13 @@ import PartnershipCard from './PartnershipCards.astro'
     <h2 class='text-[clamp(2rem,2vw,3rem)] text-center'>PROCES WSPÓŁPRACY</h2>
   </div>
 
- <PartnershipCard />
-
+  <PartnershipCard />
 </section>
 
 <style>
-  section {
-    margin: 0 auto;
+  @media (min-width: 2200px) {
+    section {
+      margin: 0 auto;
+    }
   }
 </style>
