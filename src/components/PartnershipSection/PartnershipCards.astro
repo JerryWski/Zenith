@@ -140,80 +140,61 @@ import NormalButton from '../Shared/NormalButton.astro';
 </div>
 
 <script>
-  document.addEventListener('DOMContentLoaded', function() {
-  // Select all the box containers
-  const boxes = document.querySelectorAll('#box-one, #box-two, #box-three');
-  
-  // Select all image containers
-  const imageContainers = document.querySelectorAll('.uno, .dos, .tres');
-  
-  // Function to reset all image containers
-  function resetImageContainers() {
-    imageContainers.forEach(container => {
-      if (container instanceof HTMLElement) {
-        container.style.transform = 'translateX(100%)';
-        container.style.opacity = '0';
-        container.style.transition = 'transform 0.5s ease-out, opacity 0.5s ease-out';
+  document.addEventListener('DOMContentLoaded', function () {
+    // Select all box containers
+    const boxContainers = document.querySelectorAll<HTMLElement>(
+      '#box-one, #box-two, #box-three',
+    );
+
+    // Function to animate the image container
+    function animateImageContainer(container: HTMLElement) {
+      const imageContainer =
+        container.querySelector<HTMLElement>('.uno, .dos, .tres');
+      if (imageContainer) {
+        imageContainer.style.transform = 'translateX(0)';
+        imageContainer.style.opacity = '1';
       }
-    });
-  }
-
-  // Function to initialize hover effects
-  function initHoverEffects() {
-    if (window.innerWidth >= 1024) {
-      // Initially hide all image containers
-      resetImageContainers();
-
-      // Add event listeners to each box
-      boxes.forEach((box, index) => {
-        if (box instanceof HTMLElement) {
-          box.addEventListener('mouseenter', function() {
-            // Reset all image containers first
-            resetImageContainers();
-            
-            // Show the corresponding image container
-            const imageContainer = imageContainers[index];
-            if (imageContainer instanceof HTMLElement) {
-              imageContainer.style.transform = 'translateX(0)';
-              imageContainer.style.opacity = '1';
-            }
-          });
-
-          box.addEventListener('mouseleave', function() {
-            // Hide the corresponding image container
-            const imageContainer = imageContainers[index];
-            if (imageContainer instanceof HTMLElement) {
-              imageContainer.style.transform = 'translateX(100%)';
-              imageContainer.style.opacity = '0';
-            }
-          });
-        }
-      });
-
-      // Optional: Show the first image container by default
-      if (imageContainers.length > 0) {
-        const firstContainer = imageContainers[0];
-        if (firstContainer instanceof HTMLElement) {
-          firstContainer.style.transform = 'translateX(0)';
-          firstContainer.style.opacity = '1';
-        }
-      }
-    } else {
-      // For screens smaller than 1024px, reset and show all images
-      imageContainers.forEach(container => {
-        if (container instanceof HTMLElement) {
-          container.style.transform = 'translateX(0)';
-          container.style.opacity = '1';
-          container.style.transition = 'none';
-        }
-      });
     }
-  }
 
-  // Initialize hover effects on load
-  initHoverEffects();
+    // Create an Intersection Observer
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting && entry.intersectionRatio >= 0.2) {
+            if (entry.target instanceof HTMLElement) {
+              animateImageContainer(entry.target);
+              observer.unobserve(entry.target);
+            }
+          }
+        });
+      },
+      {
+        threshold: 0.2,
+        rootMargin: '0px 0px -350px 0px',
+      },
+    );
 
-  // Add resize event listener to handle responsiveness
-  window.addEventListener('resize', initHoverEffects);
-});
+    boxContainers.forEach((container) => {
+      const imageContainer =
+        container.querySelector<HTMLElement>('.uno, .dos, .tres');
+      if (imageContainer) {
+        imageContainer.style.transform = 'translateX(100%)';
+        imageContainer.style.opacity = '0';
+        imageContainer.style.transition =
+          'transform 0.5s ease-out, opacity 0.5s ease-out';
+      }
+      observer.observe(container);
+    });
+
+    function handleResize() {
+      if (window.innerWidth < 1024) {
+        boxContainers.forEach((container) => {
+          animateImageContainer(container);
+          observer.unobserve(container);
+        });
+      }
+    }
+    window.addEventListener('resize', handleResize);
+    handleResize();
+  });
 </script>

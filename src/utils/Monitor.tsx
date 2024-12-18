@@ -50,7 +50,6 @@ const LogoAnime: React.FC = () => {
         autoplay={false}
         loop={false}
         onComplete={() => {
-          console.log('ypui');
           logoRef.current?.goToAndPlay(55, true);
         }}
       />
